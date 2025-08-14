@@ -271,16 +271,16 @@
                 INTERNAL_SMOOTHFACTOR_POS: .075,
             }
 // // Gyro permission for mobile browsers
-//    document.addEventListener('pointerdown', function () {
-//        try {
-//            if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
-//                DeviceMotionEvent.requestPermission().catch(()=>{});
-//            }
-//            if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-//                DeviceOrientationEvent.requestPermission().catch(()=>{});
-//            }
-//        } catch (e) {}
-//    }, { once: true });
+    document.addEventListener('pointerdown', function () {
+        try {
+            if (typeof DeviceMotionEvent !== 'undefined' && typeof DeviceMotionEvent.requestPermission === 'function') {
+                DeviceMotionEvent.requestPermission().catch(()=>{});
+            }
+            if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
+                DeviceOrientationEvent.requestPermission().catch(()=>{});
+            }
+        } catch (e) {}
+    }, { once: true });
 //    // Your existing resizeCanvas function
 //    function resizeCanvas() {
 //    var canvas = document.querySelector("#unity-canvas");
